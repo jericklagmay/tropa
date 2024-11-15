@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: rgb(240, 240, 240);
+            background-image: url(2.jpg);
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+        }
+
+        .btns {
+            align-self: first baseline;
+            column-gap: 2rem;
+            background-color: var(--color--white--shade);
+        }
+
+        .btn {
+        background-color: var(--color--black);
+        color: var(--color--white);
+        cursor: pointer;
+        transition: scale 0.25s ease-in, opacity 0.25s ease-in, filter 0.25s ease-in;
+        }
+
+        .btn:hover {
+        scale: 1.2;
+        }
+
+        .btns:has(.btn:hover) .btn:not(:hover) {
+        scale: 0.8;
+        opacity: 0.8;
+        filter: blur(4px);
+        }
+
+        .container {
+            margin: 100px 0 0 200px;
+            width: 70%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .container img {
+            width: 10%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            transition: all ease-in-out 0.5;
+        }
+
+        .container img:hover {
+            width: 25%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <header>
+        <h2>TROPA</h2>
+    </header>
+    <div class="btns">
+        <ul>
+            <button class="btn"><li><a href="index.html">HOME</a></li></button>
+            <button class="btn"><li><a href="gallery.html">GALLERY</a></li></button>
+            <button class="btn"><li><a href="videos.html">VIDEOS</a></li></button>
+        </ul>
+    </div>
+<body>
+    <div class="container">
+        <img src="1.jpg">
+        <img src="2.jpg">
+        <img src="3.jpg">
+        <img src="4.jpg">
+        <img src="5.jpg">
+        <img src="6.jpg">
+    </div>
+</body>
+</html>

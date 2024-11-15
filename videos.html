@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 960px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        .description {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sample Video Page</h1>
+        <!-- Video Player -->
+        <video controls>
+            <source src="7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="description">
+            <p>This is a sample description of the video content. You can add more information about the video here.</p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Video Page. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <ul>
+        <button class="btn"><li><a href="index.html">HOME</a></li></button>
+        <button class="btn"><li><a href="gallery.html">GALLERY</a></li></button>
+        <button class="btn"><li><a href="videos.html">VIDEOS</a></li></button>
+    </ul>
+
+</body>
+</html>
